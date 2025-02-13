@@ -41,7 +41,7 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href="https://drive.google.com/file/d/1hCse3uULAYEqoYcP20xsRjKwsrs2Tcpo/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1QraEpFsoBXE4UBK7C6uOdmGAE4Vnq6Hs/view?usp=drive_link"
                     // download="Resume.pdf"
                     target="_blank"  // Opens link in new tab
                     rel="noopener noreferrer"  // Prevents security issues

@@ -4,7 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 
 // Splash Screen
 
@@ -27,7 +27,7 @@ const greeting = {
     "A Data Science graduate student at the University of Washington. With a background in data science, I specialize in turning raw data into actionable insights. I've spent the last few years honing my skills in Python, PySpark, AWS, and Tableau, working on high-impact projects in the fintech space. Whether it's building machine learning models or engineering scalable data solutions, I'm passionate about solving complex problems and making data-driven decisions. Outside of work, I'm always exploring the latest tools and technologies to stay ahead in the ever-evolving world of data."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1hCse3uULAYEqoYcP20xsRjKwsrs2Tcpo/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1QraEpFsoBXE4UBK7C6uOdmGAE4Vnq6Hs/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -100,7 +100,12 @@ const educationInfo = {
       logo: require("./assets/images/udubLogo.png"),
       subHeader: "Master of Science in Data Science",
       duration: "September 2024 - April 2026",
-      descBullets: ["DATA 556 Intorduction to Probabilty and Statistics", "DATA 511 Data Visualisation"]
+      descBullets: [
+        "STAT 538 Convex Optimisation",
+        "STAT 557 Applied Statistics And Experimental Design",
+        "DATA 511 Data Visualisation",
+        "DATA 556 Intorduction to Probabilty and Statistics"
+    ]
     },
     {
       schoolName: "Birla Institute of Technology and Science, Pilani",
@@ -108,8 +113,16 @@ const educationInfo = {
       subHeader: "Bachelor of Engineering in Electronics and Communication",
       duration: "August 2017 - May 2021",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["CS F111 Computer Programming", "CS F211 Data Structures and Algorithms","CS F213 Object Oriented Programming",
-        "BITS F312 Neural Networks and Fuzzy Logic", "BITS F464 Machine Learning", "ECE F434 Digital Signal Processing", "EEE 435 Digital Image Processing"]
+      descBullets: [
+        "BITS F464 Machine Learning",
+        "BITS F312 Neural Networks and Fuzzy Logic",
+        "EEE 435 Digital Image Processing",
+        "ECE F434 Digital Signal Processing",
+        "CS F213 Object Oriented Programming",
+        "CS F211 Data Structures and Algorithms",
+        "CS F111 Computer Programming"
+    ]
+    
       
     }
   ]
@@ -258,8 +271,32 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "Some projects I undertook during my studies",
+  subtitle: "Some projects and hackathons I undertook during my studies",
   projects: [
+    {
+      //image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Apartment Recommendation System",
+      projectDesc: [
+        "This project won first prize in the annual Data Science Hackathon 2025. ",
+        "The goal was to build an recommendation system for the Greater Seattle Area. ",
+        "Applied optimization techniques and collaborative filtering to suggest top-rated apartments based on multiple factors."
+      ],
+      footerLink: [
+        { name: "Git Repo", url: "https://github.com/ridswnt10/ds_hackathon_2025" }
+        //  you can add extra buttons here.
+      ],
+    },
+    {
+      projectName: "Fantasy Football - \"Soccer\"",
+      projectDesc: "A data driven team building app for users to build FPL teams using insights from different statistics.",
+      footerLink: [
+        {
+          name: "View app",
+          url: "https://fpl511.streamlit.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
     {
       projectName: "Unlocking Climatic Solutions using Machine Learning",
       projectDesc: "Investigated the impact of COVID-19 on climate change. Developed key performance indicators (KPIs) to assess the climatic degradation of cities linked to human activities.",
@@ -304,24 +341,25 @@ const bigProjects = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  // subtitle:
+    // "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@ridswnt10/fraud-detection-in-banking-credit-cards-using-deep-reinforcement-learning-d248636bbb4e",
+      title: "Fraud Detection in Banking,Credit Cards Using Deep Reinforcement Learning",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Reinforcing Security: Deep Learning's New Role in Combating Credit Card Fraud"
     }
+    // ,
+    // {
+    //   url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+    //   title: "Why REACT is The Best?",
+    //   description:
+    //     "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+    // }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections

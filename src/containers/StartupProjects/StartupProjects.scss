@@ -17,7 +17,9 @@
   font-size: 17px;
   line-height: 1.5rem;
 }
+
 .project-card {
+  flex: 0 1 calc(46% - 1rem);
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
@@ -60,8 +62,8 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .project-card-footer span.project-tag {
@@ -87,4 +89,8 @@
     font-size: 16px;
     text-align: center;
   }
+  .project-card{
+    flex: 0 1 100%
+  }
+  
 }
