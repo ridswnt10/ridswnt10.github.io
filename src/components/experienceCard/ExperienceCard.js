@@ -9,8 +9,8 @@ export default function ExperienceCard({ workExperiences, isDark }) {
           <li
             key={i}
             className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+            dangerouslySetInnerHTML={{ __html: item }}
           >
-            {item}
           </li>
         ))
       : null;
@@ -91,12 +91,35 @@ export default function ExperienceCard({ workExperiences, isDark }) {
               >
                 {cardInfo.desc}
               </p>
-              <ul>
-                <GetDescBullets
-                  descBullets={cardInfo.descPoints}
-                  isDark={isDark}
-                />
-              </ul>
+              {cardInfo.positions ? (
+                <div className="positions-container">
+                  {cardInfo.positions.map((position, posIndex) => (
+                    <div key={posIndex} className="position-section">
+                      <div className="position-header">
+                        <h5 className={isDark ? "position-title dark-mode-text" : "position-title"}>
+                          {position.title}
+                        </h5>
+                        <span className={isDark ? "position-duration dark-mode-text" : "position-duration"}>
+                          {position.duration}
+                        </span>
+                      </div>
+                      <ul>
+                        <GetDescBullets
+                          descBullets={position.descPoints}
+                          isDark={isDark}
+                        />
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <ul>
+                  <GetDescBullets
+                    descBullets={cardInfo.descPoints}
+                    isDark={isDark}
+                  />
+                </ul>
+              )}
             </div>
           </div>
         </div>

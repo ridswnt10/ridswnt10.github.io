@@ -184,6 +184,50 @@
   text-align: justify;
   padding-right: 25px; 
 }
+
+// Position sections styling
+.positions-container {
+  width: 100%;
+}
+
+.position-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $lightBorder1;
+  
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.position-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+.position-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: $titleColor;
+  margin: 0;
+}
+
+.position-duration {
+  font-size: 14px;
+  color: $subTitle;
+  font-style: italic;
+}
+
 // Modify other CSS accordingly (same as before)
 
 

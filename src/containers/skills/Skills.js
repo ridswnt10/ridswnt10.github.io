@@ -40,8 +40,8 @@ export default function Skills() {
                   ? "dark-mode subTitle skills-text-subtitle"
                   : "subTitle skills-text-subtitle"
               }
+              dangerouslySetInnerHTML={{ __html: skillsSection.subTitle }}
             >
-              {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
             <div>
@@ -54,8 +54,8 @@ export default function Skills() {
                         ? "dark-mode subTitle skills-text"
                         : "subTitle skills-text"
                     }
+                    dangerouslySetInnerHTML={{ __html: skills }}
                   >
-                    {skills}
                   </p>
                 );
               })}

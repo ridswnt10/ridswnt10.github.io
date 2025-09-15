@@ -24,10 +24,11 @@ const greeting = {
   username: "Riddhesh Sawant",
   title: "Hi, I'm Riddhesh",
   subTitle: emoji(
-    "A Data Science graduate student at the University of Washington. With a background in data science, I specialize in turning raw data into actionable insights. I've spent the last few years honing my skills in Python, PySpark, AWS, and Tableau, working on high-impact projects in the fintech space. Whether it's building machine learning models or engineering scalable data solutions, I'm passionate about solving complex problems and making data-driven decisions. Outside of work, I'm always exploring the latest tools and technologies to stay ahead in the ever-evolving world of data."
+    "A Data Science graduate student at the University of Washington with <b>3.5+ years of experience</b> as a data scientist in <b>fintech and ecommerce</b> domains, specializing in <b>agentic AI systems</b> and <b>Large Language Models (LLMs)</b>. I engineer autonomous multi-agent architectures using <b>OpenAI GPT models</b>, <b>Bayesian time-series forecasting</b>, and <b>real-time model monitoring</b> to build intelligent systems that drive business impact. My work spans from building unified multi-modal foundation models for medical AI challenges to deploying real-time orca monitoring dashboards that contribute to open source projects. I'm passionate about pushing the boundaries of what's possible with AI and making data-driven decisions that create measurable value."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1QraEpFsoBXE4UBK7C6uOdmGAE4Vnq6Hs/view?usp=sharing", // Set to empty to hide the button
+  // "https://drive.google.com/file/d/1QraEpFsoBXE4UBK7C6uOdmGAE4Vnq6Hs/view?usp=sharing", // Set to empty to hide the button
+    "/Riddhesh_Sawant_Data_Scientist_Resume.pdf", // Path to your resume file in the public folder
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -46,20 +47,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "PASSIONATE DATA SCIENTIST AND ENGINEER EXPLORING THE FRONTIERS OF AI AND BIG DATA",
+  subTitle: "AGENTIC AI SPECIALIST & LLM ENGINEER BUILDING AUTONOMOUS INTELLIGENT SYSTEMS",
   skills: [
-    emoji(
-      "⚡ Develop and deploy machine learning models for predictive analytics and automation"
-    ),
-    emoji(
-      "⚡ Design and optimize scalable data pipelines using tools like PySpark, SQL, and AWS"
-    ),
-    emoji(
-      "⚡ Build end-to-end data solutions from ingestion to visualization with platforms like Tableau and Python"
-    ),
-    emoji(
-      "⚡ Integration of cloud services such as AWS, GCP, and Databricks for seamless data operations"
-    )
+    "🤖 Engineer <b>agentic AI systems</b> with autonomous multi-agent architectures using <b>OpenAI GPT models</b> for fraud detection and business automation",
+    "🧠 Build <b>Large Language Model (LLM)</b> applications and <b>multi-modal foundation models</b> for complex AI challenges like medical imaging and natural language processing",
+    "⚡ Develop <b>real-time model monitoring</b> platforms with <b>Bayesian time-series forecasting</b> using <b>Orbit</b> for proactive risk management and business intelligence",
+    "🚀 Deploy <b>scalable data pipelines</b> and <b>intelligent automation</b> systems that process 1,000+ applications per batch with 95%+ accuracy"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -71,8 +64,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "C++",
-      fontAwesomeClassname: "devicon-cplusplus-plain"
+      skillName: "OpenAI GPT",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "PyTorch",
+      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "sql-database",
@@ -85,6 +82,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "CatBoost",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "Gurobi",
+      fontAwesomeClassname: "fas fa-calculator"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -101,11 +106,15 @@ const educationInfo = {
       subHeader: "Master of Science in Data Science",
       duration: "September 2024 - April 2026",
       descBullets: [
+        "DATA 512 Human Centered Data Science",
+        "DATA 516 Scalable Data Systems and Algorithms",
+        "DATA 590 Data Science Capstone - 1",
+        "CSE 599 LLM Serving Systems",
+        "DATA 588 Machine Learning For Data Scientists",
         "STAT 538 Convex Optimisation",
         "STAT 557 Applied Statistics And Experimental Design",
         "DATA 511 Data Visualisation",
-        "DATA 556 Intorduction to Probabilty and Statistics"
-    ]
+        "DATA 556 Intorduction to Probabilty and Statistics"]
     },
     {
       schoolName: "Birla Institute of Technology and Science, Pilani",
@@ -155,21 +164,52 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      title: "Senior Data Scientist",
+      title: "Data Science Intern",
+      company: "Faire",
+      company_url: "https://www.faire.com/",
+      logo_path: require("./assets/images/faireLogo.png"),
+      duration: "June 2025 – September 2025",
+      location: "Seattle, USA",
+      description: "",
+      descPoints: ["Built an <b>agentic AI</b> fraud detection and retailer verification system using <b>OpenAI GPT</b> models with autonomous <b>multi-agent architecture</b>, processing <b>1,000+ applications</b> per batch to detect identity inconsistencies and high-risk behavior, achieving <b>95%+ detection accuracy</b> and reducing manual review time from <b>30 minutes to 5 seconds</b> per case.",
+        "Built a retailer annual sales estimation agent combining <b>deep research</b>, vector-embedded business profiles, and historical transaction intelligence to improve underwriting accuracy with <b>±10% error for 90%</b> of evaluated businesses, and <b>reducing bad debt risk by 12%</b>."
+      ]
+    },
+    {
+
+      
+      title: "",
       company: "CRED",
       company_url: "https://cred.club/",
       logo_path: require("./assets/images/credLogo.png"),
       duration: "Jan 2021 – Aug 2024",
       location: "Bengaluru, India",
       description: "",
-      descPoints: ["Engineered a dynamic pricing framework to optimize interest rates, enhancing portfolio conversion by 17% and achieved $12 million in monthly incremental disbursals; implemented using CatBoost (AUC 0.83) and linear programming.",
-        "Created a homepage personalization model, increasing the loan application click conversion by 30%.",
-      "Built a model to validate user groups for lending, improving approval rates by 5%. Utilized linear optimization and random forest algorithms, achieving 84.5% accuracy.",
-      "Created a comprehensive model monitoring platform with alert capabilities and residual analysis to proactively mitigate model drift and enable timely interventions by model owners.",
-      "Led scaling of real-time services, encompassing in-app asset activations and real-time communications.",
-      "Built propensity model with a 0.78 AUC to predict 30-day loan uptake, boosting user targeting and offer conversion by 15%.",
-      "Engineered in-app and external communication triggers, enhancing loan application rates and contributing to over 10% of monthly loan disbursements"
-    ]
+      positions: [
+        {
+          title: "Data Scientist II",
+          duration: "Sep 2022 – Aug 2024",
+          descPoints: ["Engineered a dynamic pricing framework to optimize interest rates, <b>enhancing portfolio conversion by 17%</b> and achieved <b>$12 million</b> in monthly incremental disbursal; implemented using <b>CatBoost Model (AUC 0.83)</b> and <b>linear programming</b> using Gurobi.",
+            "Boosted loan application <b>click conversions by 30%</b> through a tailored homepage recommendation system powered by gradient boosting and user segmentation.",
+            "Engineered a <b>Bayesian time-series forecasting</b> system using <b>Orbit</b> to model credit disbursal demand and default risk, integrating trend, seasonality, and uncertainty intervals. Improved monthly disbursal planning for <b>$200M portfolio with 94% forecast</b> accuracy and enabled proactive credit limit adjustments, <b>reducing default risk by 6%</b> and <b>manual planning effort by 20+ hours</b> per month."
+          ]
+        },
+        {
+          title: "Data Scientist",
+          duration: "Jun 2021 – Sep 2022",
+          descPoints: ["<b>Increased approval rates by 5%</b> with a user group validation model to predict users liability. (linear optimization, random forest (AUC 0.84))",
+            "Developed a <b>real-time model monitoring</b> platform with Slack/email alerts, residual analysis, and input drift detection; onboarded <b>15+ models</b> and integrated Tableau dashboards to automate performance tracking and drive faster decisions.",
+            "Spearheaded the scaling of real-time services, including in-app asset activations and seamless real-time communications, improving system throughput by <b>3×</b> and reducing latency from <b>250ms to under 50ms</b>, while ensuring 99.99% up-time."
+          ]
+        },
+        {
+          title: "Data Scientist Intern",
+          duration: "Jan 2021 – Jun 2021",
+          descPoints: ["<b>Improved offer conversion rate by 15%</b> by designing a loan uptake <b>propensity model</b> using xgboost(0.78 AUC)",
+            "Engineered in-app and external communication triggers, enhancing loan application rates and contributing to over <b>10% of monthly loan disbursements</b>."
+          ]
+        }
+      ]
     },
     {
       title: "Data Science Intern",
@@ -179,7 +219,8 @@ const workExperiences = {
       duration: "August 2020 – Dec 2020",
       location: "Bengaluru, India",
       description: "",
-      descPoints: ["Analyzed user behavior in-app to identify drop-off points, achieving 15% enhancement in funnel performance.","Developed a churn prediction model using LightGBM with 0.76 AUC, reducing user drop-off by 12% in the next months.",
+      descPoints: ["Analyzed user behavior in-app to identify drop-off points, <b>achieving 15% enhancement</b> in funnel performance.",
+        "Developed a churn prediction model using LightGBM with 0.76 AUC, <b>reducing user drop-off by 12%</b> in the next months.",
         "Built a rule-based system for extracting SIP details from text, enhancing investment recommendations and risk assessments."
       ]
     },
@@ -191,7 +232,9 @@ const workExperiences = {
       duration: "July 2020 – Aug 2020",
       location: "Bengaluru, India",
       description: "",
-      descPoints: ["Developed a sentiment analysis system for email communications, enhancing sales insights and customer understanding.","Integrated into CRM systems for enhanced sales analytics increasing user adpotion by 12%."]
+      descPoints: ["Developed a sentiment classification system for email communications, enhancing sales insights and customer understanding.",
+        "Integrated into CRM systems for enhanced sales analytics <b>increasing user adoption by 12%</b>."
+      ]
     },
     {
       title: "Software Development Intern",
@@ -201,7 +244,7 @@ const workExperiences = {
       duration: "May 2019 – July 2019",
       location: "Bengaluru, India",
       description: "",
-      descPoints: ["Developed a forecasting model using ARIMA to predict future sales and optimize cotton production in mills reducing wastage by 30%. Created a user interface to visualize sales and company spend trends across different time periods."]
+      descPoints: ["Developed a forecasting model using <b>ARIMA</b> to predict future sales and optimize cotton production in mills <b>reducing wastage by 30%</b>. Created a user interface to visualize sales and company spend trends across different time periods using <b>PyQt</b>."]
     }
   ]
 };
@@ -273,6 +316,21 @@ const bigProjects = {
   title: "Projects",
   subtitle: "Some projects and hackathons I undertook during my studies",
   projects: [
+    {
+      projectName: "UW Medicine - KurtLab",
+      projectDesc: "Building a unified multi-modal foundation model for the MICCAI UNICORN Medical AI Challenge, tackling 20+ radiology and pathology tasks (classification, detection, segmentation, generation) using cross-modal representation learning and efficient transformer backbones under compute constraints.",
+      footerLink: [
+        { name: "Lab Website", url: "https://www.kurtlab.com/" }
+      ]
+    },
+    {
+      projectName: "Underwater Acoustic Monitoring for Marine Conservation (Orcasound Project)",
+      projectDesc: "Built an automated data pipeline processing 3,000+ daily hydrophone recordings, accelerating noise trend analysis by 5x. Deployed real-time orca monitoring dashboards, supporting 10+ research projects, expanding acoustic data access by 300%.",
+      footerLink: [
+        { name: "Git Repo", url: "https://github.com/orcasound" },
+        { name: "Institute Website", url: "https://escience.washington.edu/people/affiliates-list/" }
+      ]
+    },
     {
       //image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Apartment Recommendation System",
