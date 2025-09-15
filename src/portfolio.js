@@ -52,7 +52,11 @@ const skillsSection = {
     "🤖 Engineer <b>agentic AI systems</b> with autonomous multi-agent architectures using <b>OpenAI GPT models</b> for fraud detection and business automation",
     "🧠 Build <b>Large Language Model (LLM)</b> applications and <b>multi-modal foundation models</b> for complex AI challenges like medical imaging and natural language processing",
     "⚡ Develop <b>real-time model monitoring</b> platforms with <b>Bayesian time-series forecasting</b> using <b>Orbit</b> for proactive risk management and business intelligence",
-    "🚀 Deploy <b>scalable data pipelines</b> and <b>intelligent automation</b> systems that process 1,000+ applications per batch with 95%+ accuracy"
+    "🚀 Deploy <b>scalable data pipelines</b> and <b>intelligent automation</b> systems that process 1,000+ applications per batch with <b>95%+ accuracy</b>",
+    "🧩 <b>Core Competencies:</b> Statistical Modeling, Machine Learning, Time Series Forecasting, Causal Inference, ETL, NLP, Database Management, Distributed Computing, Data Visualization, DSA, Convex Optimization, <b>LLM Serving Systems</b>",
+    "🔧 <b>Frameworks:</b> PyTorch, TensorFlow, Keras, NumPy, Pandas, Scikit‑learn, Matplotlib, Gurobi, <b>OpenAI APIs</b>, REST APIs",
+    "🛠️ <b>Tools & Platforms:</b> AWS, Databricks, Docker, Git, Airflow, Snowflake, Tableau, Kubernetes, MLflow, FastAPI, Kafka, CI/CD, Retool, Mode, MS Excel",
+    "💻 <b>Programming:</b> Python, R, PySpark, SQL, C++, HTML, MATLAB"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -62,6 +66,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "pyspark",
+      fontAwesomeClassname: "fas fa-bolt"
+    },
+    {
+      skillName: "r",
+      fontAwesomeClassname: "fab fa-r-project"
     },
     {
       skillName: "OpenAI GPT",
@@ -84,12 +96,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "CatBoost",
-      fontAwesomeClassname: "fas fa-chart-line"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "Gurobi",
-      fontAwesomeClassname: "fas fa-calculator"
+      skillName: "CI/CD",
+      fontAwesomeClassname: "fas fa-sync"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -104,7 +116,7 @@ const educationInfo = {
       schoolName: "University of Washington",
       logo: require("./assets/images/udubLogo.png"),
       subHeader: "Master of Science in Data Science",
-      duration: "September 2024 - April 2026",
+      duration: "September 2024 - March 2026",
       descBullets: [
         "DATA 512 Human Centered Data Science",
         "DATA 516 Scalable Data Systems and Algorithms",
@@ -168,11 +180,12 @@ const workExperiences = {
       company: "Faire",
       company_url: "https://www.faire.com/",
       logo_path: require("./assets/images/faireLogo.png"),
-      duration: "June 2025 – September 2025",
-      location: "Seattle, USA",
+      duration: "June 2025 – Present",
+      location: "San Francisco, CA, USA",
       description: "",
-      descPoints: ["Built an <b>agentic AI</b> fraud detection and retailer verification system using <b>OpenAI GPT</b> models with autonomous <b>multi-agent architecture</b>, processing <b>1,000+ applications</b> per batch to detect identity inconsistencies and high-risk behavior, achieving <b>95%+ detection accuracy</b> and reducing manual review time from <b>30 minutes to 5 seconds</b> per case.",
-        "Built a retailer annual sales estimation agent combining <b>deep research</b>, vector-embedded business profiles, and historical transaction intelligence to improve underwriting accuracy with <b>±10% error for 90%</b> of evaluated businesses, and <b>reducing bad debt risk by 12%</b>."
+      descPoints: [
+        "Built and deployed a <b>retailer sales estimation</b> agent using <b>deep research</b>, vector embeddings, and transaction data (<b>±15% error for 80%</b> of retailers). Added a <b>calibration</b> layer for bias mitigation and monthly auto‑retraining via <b>Airflow + AWS Batch</b>, <b>reducing bad debt risk by 12%</b>.",
+        "Developed an <b>AI fraud detection</b> and retailer verification system with <b>GPT‑powered multi‑agent</b> workflows, processing <b>1,000+ applications</b> per batch. Achieved <b>95%+ accuracy</b>, prevented <b>$500K+</b> fraud losses, and cut review time from <b>30 minutes</b> to <b>5 seconds</b> on scalable cloud infrastructure."
       ]
     },
     {
@@ -189,24 +202,32 @@ const workExperiences = {
         {
           title: "Data Scientist II",
           duration: "Sep 2022 – Aug 2024",
-          descPoints: ["Engineered a dynamic pricing framework to optimize interest rates, <b>enhancing portfolio conversion by 17%</b> and achieved <b>$12 million</b> in monthly incremental disbursal; implemented using <b>CatBoost Model (AUC 0.83)</b> and <b>linear programming</b> using Gurobi.",
-            "Boosted loan application <b>click conversions by 30%</b> through a tailored homepage recommendation system powered by gradient boosting and user segmentation.",
-            "Engineered a <b>Bayesian time-series forecasting</b> system using <b>Orbit</b> to model credit disbursal demand and default risk, integrating trend, seasonality, and uncertainty intervals. Improved monthly disbursal planning for <b>$200M portfolio with 94% forecast</b> accuracy and enabled proactive credit limit adjustments, <b>reducing default risk by 6%</b> and <b>manual planning effort by 20+ hours</b> per month."
+          location: "Bengaluru, India",
+          descPoints: [
+            "Engineered a <b>dynamic pricing</b> framework to optimize interest rates, <b>boosting portfolio conversion by 17%</b> and driving <b>$12M</b> in incremental monthly disbursals; implemented using <b>CatBoost (AUC 0.83)</b> and <b>constraint optimization</b>.",
+            "Developed a <b>contrastive learning</b> framework using a Transformer‑based sequence encoder (<b>SASRec</b> + <b>SimCLR‑style loss</b>) on user traversal data; achieved <b>92% precision</b> in identifying high‑value cohorts, enabling targeted credit scaling and <b>boosting profitability by 7%</b>.",
+            "Built a <b>Bayesian time‑series forecasting</b> system (<b>Orbit</b>) to predict credit disbursal demand and default risk for a <b>$200M</b> portfolio, achieving <b>94%</b> forecast accuracy and <b>reducing default risk by 6%</b>; automated retraining and reporting, saving <b>20+ hours</b> monthly.",
+            "Collaborated with product managers and risk teams to align ML outputs with <b>credit policy</b>, improving adoption across business.",
+            "Deployed ML models as <b>real‑time microservices</b> using <b>AWS + Docker + Kubernetes</b>, reducing scoring latency from <b>250ms</b> to <b>50ms</b> and scaling to <b>500K+ daily requests</b>."
           ]
         },
         {
           title: "Data Scientist",
           duration: "Jun 2021 – Sep 2022",
-          descPoints: ["<b>Increased approval rates by 5%</b> with a user group validation model to predict users liability. (linear optimization, random forest (AUC 0.84))",
-            "Developed a <b>real-time model monitoring</b> platform with Slack/email alerts, residual analysis, and input drift detection; onboarded <b>15+ models</b> and integrated Tableau dashboards to automate performance tracking and drive faster decisions.",
-            "Spearheaded the scaling of real-time services, including in-app asset activations and seamless real-time communications, improving system throughput by <b>3×</b> and reducing latency from <b>250ms to under 50ms</b>, while ensuring 99.99% up-time."
+          location: "Bengaluru, India",
+          descPoints: [
+            "Built a <b>personalized homepage recommendation</b> engine with gradient boosting and user segmentation, <b>increasing loan application clicks by 30%</b>.",
+            "<b>Increased approval rates by 5%</b> with a liability validation model (<b>random forest, AUC 0.84</b> + linear optimization).",
+            "Built a <b>real‑time monitoring</b> platform with drift detection, residual analysis, and Slack/email alerts; integrated with the <b>feature store</b> to ensure consistency across training and serving. Onboarded <b>15+ production models</b>, cutting incident response time by <b>80%</b>."
           ]
         },
         {
           title: "Data Scientist Intern",
           duration: "Jan 2021 – Jun 2021",
-          descPoints: ["<b>Improved offer conversion rate by 15%</b> by designing a loan uptake <b>propensity model</b> using xgboost(0.78 AUC)",
-            "Engineered in-app and external communication triggers, enhancing loan application rates and contributing to over <b>10% of monthly loan disbursements</b>."
+          location: "Bengaluru, India",
+          descPoints: [
+            "<b>Improved offer conversion rate by 15%</b> by designing a loan uptake <b>propensity model</b> using <b>XGBoost (AUC 0.78)</b>.",
+            "Engineered in‑app/external communication triggers, contributing to <b>10%+</b> of monthly loan disbursals."
           ]
         }
       ]
@@ -257,7 +278,7 @@ const achievementSection = {
     {
       title: "Novel EEG Features for Consumer Emotion Prediction using Correlation-Based Subset Selection",
       subtitle:
-        "",
+        "Presented at AMC IMX 2022 Conference",
       footerLink: [
         {
           name: "Paper",
@@ -317,15 +338,15 @@ const bigProjects = {
   subtitle: "Some projects and hackathons I undertook during my studies",
   projects: [
     {
-      projectName: "UW Medicine - KurtLab",
-      projectDesc: "Building a unified multi-modal foundation model for the MICCAI UNICORN Medical AI Challenge, tackling 20+ radiology and pathology tasks (classification, detection, segmentation, generation) using cross-modal representation learning and efficient transformer backbones under compute constraints.",
+      projectName: "MICCAI UNICORN Medical AI Challenge",
+      projectDesc: "Fine‑tuned open‑source healthcare models (AlphaMed, UltraMed, MedIron) and general‑purpose transformers (LLaMA, RoBERTa) via Hugging Face APIs, applying cross‑modal learning with efficient transformer backbones for pathology and radiology tasks under compute limits.",
       footerLink: [
         { name: "Lab Website", url: "https://www.kurtlab.com/" }
       ]
     },
     {
       projectName: "Underwater Acoustic Monitoring for Marine Conservation (Orcasound Project)",
-      projectDesc: "Built an automated data pipeline processing 3,000+ daily hydrophone recordings, accelerating noise trend analysis by 5x. Deployed real-time orca monitoring dashboards, supporting 10+ research projects, expanding acoustic data access by 300%.",
+      projectDesc: "Feb 2025 – Jun 2025: Developed scalable pipelines to process 3,000+ daily hydrophone recordings and deployed real‑time orca monitoring dashboards, accelerating noise trend analysis by 5x and expanding data access by 300% for 10+ research projects.",
       footerLink: [
         { name: "Git Repo", url: "https://github.com/orcasound" },
         { name: "Institute Website", url: "https://escience.washington.edu/people/affiliates-list/" }

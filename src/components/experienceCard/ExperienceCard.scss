@@ -167,12 +167,24 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     padding-right: 0; 
   }
+}
+
+.experience-right-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.experience-text-location {
+  text-align: right;
 }
 
 .experience-text-date {

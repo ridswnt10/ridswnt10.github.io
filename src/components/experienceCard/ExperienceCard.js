@@ -72,15 +72,30 @@ export default function ExperienceCard({ workExperiences, isDark }) {
                   >
                     {cardInfo.title}
                   </h4>
-                  <h5
-                    className={
-                      isDark
-                        ? "experience-text-date dark-mode-text"
-                        : "experience-text-date"
-                    }
-                  >
-                    {cardInfo.duration}
-                  </h5>
+                  <div className="experience-right-meta">
+                    {(cardInfo.company || cardInfo.location) && (
+                      <span
+                        className={
+                          isDark
+                            ? "experience-text-location subTitle dark-mode-text"
+                            : "experience-text-location subTitle"
+                        }
+                      >
+                        {/* {cardInfo.company} */}
+                        {/* {cardInfo.company && cardInfo.location ? " • " : ""} */}
+                        {cardInfo.location}
+                      </span>
+                    )}
+                    <h5
+                      className={
+                        isDark
+                          ? "experience-text-date dark-mode-text"
+                          : "experience-text-date"
+                      }
+                    >
+                      {cardInfo.duration}
+                    </h5>
+                  </div>
               </div>
               <p
                 className={
