@@ -53,10 +53,10 @@ export default function ExperienceCard({ workExperiences, isDark }) {
                   style={{
                     backgroundImage: `url(${cardInfo.logo_path})`,
                     backgroundSize: 'contain',
-                    backgroundPosition: 'left',
+                    backgroundPosition: 'left center',
                     backgroundRepeat: 'no-repeat',
                     height: '100%',
-                    width: '25%'}}
+                    width: '75%'}}
                 >
                 </div>
               </a>

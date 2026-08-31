@@ -24,7 +24,7 @@ const greeting = {
   username: "Riddhesh Sawant",
   title: "Hi, I'm Riddhesh",
   subTitle: emoji(
-    "A Data Science graduate student at the University of Washington with <b>3.5+ years of experience</b> as a data scientist in <b>fintech and ecommerce</b> domains, specializing in <b>agentic AI systems</b> and <b>Large Language Models (LLMs)</b>. I engineer autonomous multi-agent architectures using <b>OpenAI GPT models</b>, <b>Bayesian time-series forecasting</b>, and <b>real-time model monitoring</b> to build intelligent systems that drive business impact. My work spans from building unified multi-modal foundation models for medical AI challenges to deploying real-time orca monitoring dashboards that contribute to open source projects. I'm passionate about pushing the boundaries of what's possible with AI and making data-driven decisions that create measurable value."
+    "MLE at DoorDash working on the conversational AI team. I have <b>3.5+ years of experience</b> as a data scientist and ML engineer in <b>fintech and ecommerce</b>, specializing in <b>agentic AI systems</b> and <b>Large Language Models (LLMs)</b>. I engineer autonomous multi-agent architectures using <b>OpenAI GPT models</b>, <b>Bayesian time-series forecasting</b>, and <b>real-time model monitoring</b> to build intelligent systems that drive business impact. My work spans from building unified multi-modal foundation models for medical AI challenges to deploying real-time orca monitoring dashboards that contribute to open source projects. I'm passionate about pushing the boundaries of what's possible with AI and making data-driven decisions that create measurable value."
   ),
   resumeLink:
   // "https://drive.google.com/file/d/1QraEpFsoBXE4UBK7C6uOdmGAE4Vnq6Hs/view?usp=sharing", // Set to empty to hide the button
@@ -176,11 +176,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      title: "Machine Learning Engineer, Conversational AI",
+      company: "DoorDash",
+      company_url: "https://www.doordash.com/",
+      logo_path: "/doordashLogo.svg",
+      duration: "April 2026 – Present",
+      location: "San Francisco, CA, USA",
+      description: "",
+      descPoints: [
+        "Contributing to an in-progress <b>Credit & Refund (CnR) optimization engine</b> using a <b>second-order cone programming (SOCP)</b> solver and consumer segmentation to determine fair, budget-constrained refunds while maximizing Gross Order Value (GOV); now running in live experimentation, with team-validated projections of <b>$30M in annual savings</b>.",
+        "Built a <b>RAG-based agentic diagnosis and monitoring system</b> over experiment, lifecycle event, and fraud event data to streamline root-cause investigation for CnR and fraud cases; integrated directly into <b>Slack</b> for non-technical stakeholders, adopted daily by <b>30+ analysts</b>, reducing aggregate manual investigation effort by <b>4–5 hours/week</b>."
+      ]
+    },
+    {
       title: "Data Science Intern",
       company: "Faire",
       company_url: "https://www.faire.com/",
       logo_path: require("./assets/images/faireLogo.png"),
-      duration: "June 2025 – Present",
+      duration: "June 2025 – September 2025",
       location: "San Francisco, CA, USA",
       description: "",
       descPoints: [
