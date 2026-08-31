@@ -55,8 +55,8 @@ export default function ExperienceCard({ workExperiences, isDark }) {
                     backgroundSize: 'contain',
                     backgroundPosition: 'left center',
                     backgroundRepeat: 'no-repeat',
-                    height: '100%',
-                    width: '75%'}}
+                    height: cardInfo.logoHeight || '100%',
+                    width: cardInfo.logoWidth || '25%'}}
                 >
                 </div>
               </a>

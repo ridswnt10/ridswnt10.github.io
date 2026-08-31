@@ -176,10 +176,12 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      title: "Machine Learning Engineer, Conversational AI",
+      title: "Machine Learning Engineer",
       company: "DoorDash",
       company_url: "https://www.doordash.com/",
       logo_path: "/doordashLogo.svg",
+      logoWidth: "32%",
+      logoHeight: "2.25rem",
       duration: "April 2026 – Present",
       location: "San Francisco, CA, USA",
       description: "",
